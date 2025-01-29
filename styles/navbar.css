@@ -82,3 +82,26 @@
     width: 1.5rem;
     aspect-ratio: 1;
 }
+
+@media (max-width: 600px) {
+    .navbar > ul {
+        flex-direction: row;
+        padding: 0;
+        gap: 0;
+        border-top: 1px solid #252525;
+    }
+
+    .navbar > ul > .navitem {
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar > ul > .hide-on-sm {
+        display: none;
+    }
+
+    .navbar > ul > .navitem > span {
+        display: none;
+    }
+}
