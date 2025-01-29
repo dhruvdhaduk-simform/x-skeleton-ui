@@ -5,6 +5,7 @@
     box-sizing: border-box;
     background-color: black;
     color: white;
+    font-family: sans-serif;
 }
 
 body {
@@ -18,9 +19,7 @@ body {
 
 .navbar {
     flex: none;
-    width: 18rem;
-
-    border: 1px solid #3A444C;
+    width: 16rem;
 }
 
 .aside {
