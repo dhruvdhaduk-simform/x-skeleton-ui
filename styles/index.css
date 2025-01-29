@@ -8,6 +8,7 @@
 }
 
 body {
+    /* Make the page responsive for ultra-wide screen sizes. */
     max-width: 110rem;
     margin: auto;
     display: flex;
@@ -50,14 +51,20 @@ body {
     border: 1px solid #3A444C;
 }
 
+/*
+ * Remove the aside section when screen width is less than 1100px.
+ * Therefore, there will be enough space for main content (i.e. feed).
+*/
 @media (max-width: 1100px) {
     .aside {
         display: none;
     }
 }
 
+/* Move the Navbar at the bottom when screen width is less than 600px. */
 @media (max-width: 600px) {
     .main {
+        /* Prevent Navbar from covering content at the bottom. */
         padding-bottom: 3rem;
     }
 
