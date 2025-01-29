@@ -1,5 +1,6 @@
 .navbar > ul {
     width: 100%;
+    height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -27,7 +28,6 @@
 }
 
 .navbar > ul > .logo {
-    /* border: 1px solid white; */
     padding: 1rem;
 }
 
@@ -45,4 +45,40 @@
     color: black;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.navbar > ul > .user {
+    margin-top: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.navbar > ul > .user > .user-profilepic {
+    width: 2.75rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
+
+.navbar > ul > .user > p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar > ul > .user > p > .name {
+    font-weight: bold;
+}
+
+.navbar > ul > .user > p > .username {
+    font-size: 0.85rem;
+    color: #a7a7a7;
+}
+
+.navbar > ul > .user > .ellipses {
+    margin-left: auto;
+    width: 1.5rem;
+    aspect-ratio: 1;
 }
