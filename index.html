@@ -8,29 +8,98 @@
         <title>X UI Clone</title>
 
         <link rel="stylesheet" href="/styles/index.css">
+        <link rel="stylesheet" href="/styles/navbar.css">
 
-        <link rel="shortcut icon" href="/icons/x.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/icons/x.svg" type="image/x-icon">
 
         <meta name="description" content="This is a project that clones the skeleton UI of the Feed page of X (formerly Twitter).">
 
         <!-- Open Graph meta tags -->
         <meta property="og:title" content="X UI Clone">
         <meta property="og:description" content="This is a project that clones the skeleton UI of the Feed page of X (formerly Twitter).">
-        <meta property="og:image" content="/images/x_cover.jpeg">
+        <meta property="og:image" content="/assets/images/x_cover.jpeg">
         <meta property="og:image:alt" content="X Cover Image">
 
         <!-- Twitter Card meta tags -->
         <meta name="twitter:title" content="X UI Clone">
         <meta name="twitter:description" content="This is a project that clones the skeleton UI of the Feed page of X (formerly Twitter).">
         <meta name="twitter:url" content="/">
-        <meta name="twitter:image:src" content="/images/x_cover.jpeg">
+        <meta name="twitter:image:src" content="/assets/images/x_cover.jpeg">
         <meta name="twitter:image:alt" content="X Cover Image">
     </head>
 
     <body>
         
         <nav class="navbar">
-            Navbar
+            <ul>
+                <!-- Main Logo of X -->
+                <li class="logo hide-on-sm">
+                    <img src="/assets/icons/x.svg" alt="X (formerly Twitter)">
+                </li>
+
+                <!-- Navigation Items -->
+                <li class="navitem" tabindex="0">
+                    <img src="/assets/icons/home.svg" alt="Home" aria-labelledby="nav-label-home">
+                    <span id="nav-label-home">Home</span>
+                </li>
+                <li class="navitem" tabindex="0">
+                    <img src="/assets/icons/search.svg" alt="Explore" aria-labelledby="nav-label-explore">
+                    <span id="nav-label-explore">Explore</span>
+                </li>
+                <li class="navitem" tabindex="0">
+                    <img src="/assets/icons/bell.svg" alt="Notifications" aria-labelledby="nav-label-notifications">
+                    <span id="nav-label-notifications">Notifications</span>
+                </li>
+                <li class="navitem" tabindex="0">
+                    <img src="/assets/icons/message.svg" alt="Messages" aria-labelledby="nav-label-messages">
+                    <span id="nav-label-messages">Messages</span>
+                </li>
+                <li class="navitem" tabindex="0">
+                    <img src="/assets/icons/xai.svg" alt="Grok" aria-labelledby="nav-label-grok">
+                    <span id="nav-label-grok">Grok</span>
+                </li>
+                <li class="navitem hide-on-sm" tabindex="0">
+                    <img src="/assets/icons/bookmark.svg" alt="Bookmarks" aria-labelledby="nav-label-bookmarks">
+                    <span id="nav-label-bookmarks">Bookmarks</span>
+                </li>
+                <li class="navitem" tabindex="0">
+                    <img src="/assets/icons/communities.svg" alt="Communities" aria-labelledby="nav-label-communities">
+                    <span id="nav-label-communities">Communities</span>
+                </li>
+                <li class="navitem hide-on-sm" tabindex="0">
+                    <img src="/assets/icons/x.svg" alt="Premium" aria-labelledby="nav-label-premium">
+                    <span id="nav-label-premium">Premium</span>
+                </li>
+                <li class="navitem hide-on-sm" tabindex="0">
+                    <img src="/assets/icons/lightning.svg" alt="Business" aria-labelledby="nav-label-business">
+                    <span id="nav-label-business">Business</span>
+                </li>
+                <li class="navitem hide-on-sm" tabindex="0">
+                    <img src="/assets/icons/profile.svg" alt="Profile" aria-labelledby="nav-label-profile">
+                    <span id="nav-label-profile">Profile</span>
+                </li>
+                <li class="navitem hide-on-sm" tabindex="0">
+                    <img src="/assets/icons/more.svg" alt="More" aria-labelledby="nav-label-more">
+                    <span id="nav-label-more">More</span>
+                </li>
+
+                <!-- Post Button -->
+                <li class="post hide-on-sm">
+                    <button>
+                        Post
+                    </button>
+                </li>
+
+                <!-- User Profile button -->
+                <li class="user hide-on-sm">
+                    <img class="user-profilepic" src="/assets/images/profile_pics/default.png" alt="Profile Picture" tabindex="0">
+                    <p>
+                        <span class="name">Dhruv Dhaduk</span>
+                        <span class="username">@dhruvdhaduk0</span>
+                    </p>
+                    <img class="ellipses" src="/assets/icons/ellipses.svg" alt="More about profile" tabindex="0">
+                </li>
+            </ul>
         </nav>
 
         <main class="main">
