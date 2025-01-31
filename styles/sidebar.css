@@ -53,42 +53,42 @@
     border-radius: 3rem;
 }
 
-/* Tranding section */
-.aside > .tranding {
+/* Trending section */
+.aside > .trending {
     margin-top: 1.5rem;
     padding: 1rem;
     border: 1px solid var(--border-color);
     border-radius: 1rem;
 }
 
-.aside > .tranding > .heading {
+.aside > .trending > .heading {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.aside > .tranding > .tranding-list {
+.aside > .trending > .trending-list {
     list-style-type: none;
 }
 
-.aside > .tranding > .tranding-list > li {
+.aside > .trending > .trending-list > li {
     padding-top: 0.65rem;
     padding-bottom: 0.65rem;
 }
 
-.aside > .tranding > .tranding-list > li > .category {
+.aside > .trending > .trending-list > li > .category {
     font-size: 0.85rem;
     font-weight: 600;
     color: #b1b1b1;
 }
 
-.aside > .tranding > .tranding-list > li > .hashtag {
+.aside > .trending > .trending-list > li > .hashtag {
     font-weight: bold;
     font-size: 0.95rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
 }
 
-.aside > .tranding > .tranding-list > li > .posts-count {
+.aside > .trending > .trending-list > li > .posts-count {
     font-size: 0.8rem;
     color: #b1b1b1;
 }
