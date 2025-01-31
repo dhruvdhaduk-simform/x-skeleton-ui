@@ -112,13 +112,14 @@
 
                 <!-- Tabs -->
                 <div class="tabs" role="tablist">
-                    <div class="tab-for-you" role="tab" tabindex="0">For you</div>
-                    <div class="tab-following" role="tab" tabindex="0">Following</div>
+                    <div class="tab-for-you" role="tab" tabindex="0" aria-controls="feed-for-you">For you</div>
+                    <div class="tab-following" role="tab" tabindex="0" aria-controls="feed-following">Following</div>
                 </div>
             </header>
 
             <div class="feed">
-                Feed
+                <div class="feed-for-you" id="feed-for-you"></div>
+                <div class="feed-following" id="feed-following"></div>
             </div>
         </main>
 
