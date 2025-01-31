@@ -29,6 +29,7 @@ body {
 .aside {
     flex: none;
     width: 25rem;
+    overflow: auto;
 }
 
 .main {
