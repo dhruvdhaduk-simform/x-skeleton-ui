@@ -6,6 +6,9 @@
     background-color: black;
     color: white;
     font-family: sans-serif;
+
+    --border-color: #252525;
+    --primary-blue-color: #1DA1F2;
 }
 
 body {
@@ -26,29 +29,23 @@ body {
 .aside {
     flex: none;
     width: 25rem;
-
-    border: 1px solid #3A444C;
 }
 
 .main {
     flex: 1;
     display: flex;
     flex-direction: column;
-
-    border: 1px solid #3A444C;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
 }
 
 .header {
     flex: none;
-    height: 4rem;
-
-    border: 1px solid #3A444C;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .feed {
     overflow: auto;
-
-    border: 1px solid #3A444C;
 }
 
 /*

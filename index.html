@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="/styles/index.css">
         <link rel="stylesheet" href="/styles/navbar.css">
+        <link rel="stylesheet" href="/styles/header.css">
 
         <link rel="shortcut icon" href="/assets/icons/x.svg" type="image/x-icon">
 
@@ -32,7 +33,7 @@
         
         <nav class="navbar">
             <ul>
-                <!-- Main Logo of X -->
+                <!-- Main Logo of X . Will be shown on large screens only-->
                 <li class="logo hide-on-sm">
                     <img src="/assets/icons/x.svg" alt="X (formerly Twitter)">
                 </li>
@@ -104,10 +105,21 @@
 
         <main class="main">
             <header class="header">
-                 header
+                <!-- Main Logo of X . Will be shown on small screens only-->
+                <div class="logo">
+                    <img src="/assets/icons/x.svg" alt="X (formerly Twitter)">
+                </div>
+
+                <!-- Tabs -->
+                <div class="tabs" role="tablist">
+                    <div class="tab-for-you" role="tab" tabindex="0" aria-controls="feed-for-you">For you</div>
+                    <div class="tab-following" role="tab" tabindex="0" aria-controls="feed-following">Following</div>
+                </div>
             </header>
+
             <div class="feed">
-                Feed
+                <div class="feed-for-you" id="feed-for-you"></div>
+                <div class="feed-following" id="feed-following"></div>
             </div>
         </main>
 

@@ -1,0 +1,57 @@
+/* Logo section for smaller screens */
+.header > .logo {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header > .logo > img {
+    width: 2rem;
+    aspect-ratio: 1;
+}
+
+/* Tabs section */
+.header > .tabs {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+}
+
+.header > .tabs > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.header > .tabs > .tab-for-you {
+    font-weight: bold;
+    position: relative;
+}
+
+/* Underline showing currently active tab */
+.header > .tabs > .tab-for-you::after {
+    content: '';
+    width: 8rem;
+    max-width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--primary-blue-color);
+    position: absolute;
+    bottom: 0;
+
+}
+
+.header > .tabs > .tab-following {
+    color: #b1b1b1;
+}
+
+/* Hide the main logo for larger screens. */
+@media (min-width: 600px) {
+    .header > .logo {
+        display: none;
+    }
+}
