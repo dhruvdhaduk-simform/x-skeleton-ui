@@ -1,0 +1,154 @@
+.aside {
+    padding: 1.5rem;
+}
+
+/* Search bar */
+.search-bar {
+    width: 100%;
+    height: 2.75rem;
+    font-size: 1.1rem;
+    border-radius: 2.5rem;
+    border: 1px solid #3b3b3b;
+
+    background-image: url('/assets/icons/search_darker.svg');
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+    padding-left: 3rem;
+}
+
+.search-bar:focus {
+    outline: none;
+    border: 1px solid #6e6e6e;
+}
+
+/* Subscribe to Premium section */
+.aside > .subscribe {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+}
+
+.aside > .subscribe > .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.aside > .subscribe > .description {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.aside > .subscribe > .subscribe-btn {
+    background-color: var(--primary-blue-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    height: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 3rem;
+}
+
+/* Trending section */
+.aside > .trending {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+}
+
+.aside > .trending > .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.aside > .trending > .trending-list {
+    list-style-type: none;
+}
+
+.aside > .trending > .trending-list > li {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+}
+
+.aside > .trending > .trending-list .category {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #b1b1b1;
+}
+
+.aside > .trending > .trending-list .hashtag {
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.aside > .trending > .trending-list .posts-count {
+    font-size: 0.8rem;
+    color: #b1b1b1;
+}
+
+/* Follow Suggestion section */
+.aside > .who-to-follow {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+}
+
+.aside > .who-to-follow > .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.aside > .who-to-follow > .who-to-follow-list {
+    list-style-type: none;
+}
+
+.aside > .who-to-follow > .who-to-follow-list > li {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.aside > .who-to-follow > .who-to-follow-list > li > img {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    flex: none;
+}
+
+.aside > .who-to-follow > .who-to-follow-list > li > p {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside > .who-to-follow > .who-to-follow-list > li > p > .name {
+    font-weight: bold;
+}
+
+.aside > .who-to-follow > .who-to-follow-list > li > p > .username {
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+.aside > .who-to-follow > .who-to-follow-list > li > button {
+    flex: none;
+    background-color: white;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
