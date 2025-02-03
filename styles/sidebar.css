@@ -53,6 +53,14 @@
     padding-left: 2rem;
     padding-right: 2rem;
     border-radius: 3rem;
+    cursor: pointer;
+    user-select: none;
+}
+.aside > .subscribe > .subscribe-btn:hover {
+    opacity: 0.9;
+}
+.aside > .subscribe > .subscribe-btn:active {
+    opacity: 0.8;
 }
 
 /* Trending section */
@@ -88,6 +96,7 @@
     font-size: 0.95rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
+    cursor: pointer;
 }
 
 .aside > .trending > .trending-list .posts-count {
@@ -125,6 +134,13 @@
     aspect-ratio: 1;
     border-radius: 100%;
     flex: none;
+    cursor: pointer;
+}
+.aside > .who-to-follow > .who-to-follow-list > li > img:hover {
+    opacity: 0.9;
+}
+.aside > .who-to-follow > .who-to-follow-list > li > img:active {
+    opacity: 0.8;
 }
 
 .aside > .who-to-follow > .who-to-follow-list > li > p {
@@ -153,4 +169,12 @@
     border: none;
     padding-left: 1rem;
     padding-right: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+.aside > .who-to-follow > .who-to-follow-list > li > button:hover {
+    opacity: 0.9;
+}
+.aside > .who-to-follow > .who-to-follow-list > li > button:active {
+    opacity: 0.8;
 }
