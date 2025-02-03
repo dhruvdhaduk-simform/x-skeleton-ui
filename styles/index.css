@@ -3,12 +3,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: black;
-    color: white;
     font-family: sans-serif;
 
     --border-color: #252525;
     --primary-blue-color: #1DA1F2;
+    --hover-background-color: #292929;
+    --active-background-color: #3b3b3b;
+}
+
+:root {
+    background-color: black;
+    color: white;
 }
 
 body {
@@ -18,6 +23,10 @@ body {
     display: flex;
     justify-content: center;
     height: 100dvh;
+}
+
+img {
+    user-select: none;
 }
 
 .navbar {
