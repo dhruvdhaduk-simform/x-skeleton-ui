@@ -10,6 +10,7 @@
 .header > .logo > img {
     width: 2rem;
     aspect-ratio: 1;
+    cursor: pointer;;
 }
 
 /* Tabs section */
@@ -25,6 +26,14 @@
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
+    cursor: pointer;
+    user-select: none;
+}
+.header > .tabs > div:hover {
+    background-color: var(--hover-background-color);
+}
+.header > .tabs > div:active {
+    background-color: var(--active-background-color);
 }
 
 .header > .tabs > .tab-for-you {
