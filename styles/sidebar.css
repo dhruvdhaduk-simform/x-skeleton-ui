@@ -4,6 +4,8 @@
 
 /* Search bar */
 .search-bar {
+    background-color: black;
+    color: white;
     width: 100%;
     height: 2.75rem;
     font-size: 1.1rem;
