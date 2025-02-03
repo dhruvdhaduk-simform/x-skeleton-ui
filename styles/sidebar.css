@@ -75,20 +75,20 @@
     padding-bottom: 0.65rem;
 }
 
-.aside > .trending > .trending-list > li > .category {
+.aside > .trending > .trending-list .category {
     font-size: 0.85rem;
     font-weight: 600;
     color: #b1b1b1;
 }
 
-.aside > .trending > .trending-list > li > .hashtag {
+.aside > .trending > .trending-list .hashtag {
     font-weight: bold;
     font-size: 0.95rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
 }
 
-.aside > .trending > .trending-list > li > .posts-count {
+.aside > .trending > .trending-list .posts-count {
     font-size: 0.8rem;
     color: #b1b1b1;
 }
