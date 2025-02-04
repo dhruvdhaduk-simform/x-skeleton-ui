@@ -6,6 +6,10 @@
     gap: 1rem;
 }
 
+.post.has-a-reply {
+    border: none;
+}
+
 .post-profile-pic,
 .post-body {
     padding-top: 1rem;
@@ -18,6 +22,34 @@
     display: flex;
     align-items: start;
     justify-content: center;
+    
+    --thread-color: #363636;
+}
+
+.post.has-a-reply .post-profile-pic {
+    position: relative;
+}
+.post.has-a-reply .post-profile-pic::after {
+    content: "";
+    background-color: var(--thread-color);
+    width: 2px;
+    height: calc(100% - 3rem);
+    position: absolute;
+    top: 3rem;
+    z-index: -1;
+}
+
+.post.is-a-reply .post-profile-pic {
+    position: relative;
+}
+.post.is-a-reply .post-profile-pic::before {
+    content: "";
+    background-color: var(--thread-color);
+    width: 2px;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 
 .post-profile-pic > img {
