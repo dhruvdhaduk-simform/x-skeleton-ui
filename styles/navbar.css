@@ -153,7 +153,10 @@
     }
 
     .navbar > ul > .navitem {
-        flex: 1;
+        flex: 1;  
+    }
+    
+    .navbar > ul > .navitem > a {
         justify-content: center;
         align-items: center;
     }
@@ -164,7 +167,7 @@
     }
 
     /* Hide labels for nav items */
-    .navbar > ul > .navitem > span {
+    .navbar > ul > .navitem span {
         display: none;
     }
 }
