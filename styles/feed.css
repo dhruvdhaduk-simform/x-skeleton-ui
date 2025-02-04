@@ -1,0 +1,74 @@
+.post {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    gap: 1rem;
+}
+
+.post-profile-pic,
+.post-body {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.post-profile-pic {
+    flex: none;
+    width: 3rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.post-profile-pic > img {
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
+
+.post-body {
+    flex: 1;
+}
+
+.post-profile-name {
+    font-weight: bold;
+}
+
+.post-username {
+    font-size: 0.95rem;
+    color: #b1b1b1;
+}
+
+.post-tick {
+    width: 1rem;
+    aspect-ratio: 1;
+}
+
+.post-middle-dot {
+    font-weight: bold;
+    color: #b1b1b1;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.post-upload-time {
+    font-size: 0.95rem;
+    color: #b1b1b1;
+}
+
+.post-content > p {
+    line-height: 1.35;
+    padding-top: 0.75rem;
+}
+
+.post-images {
+    margin-top: 0.75rem;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.post-images-1 > img {
+    width: 100%;
+}
