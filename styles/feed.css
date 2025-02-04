@@ -24,6 +24,13 @@
     width: 3rem;
     aspect-ratio: 1;
     border-radius: 100%;
+    cursor: pointer;
+}
+.post-profile-pic > img:hover {
+    opacity: 0.9;
+}
+.post-profile-pic > img:active {
+    opacity: 0.8;
 }
 
 .post-body {
@@ -67,6 +74,10 @@
     border: 1px solid var(--border-color);
     border-radius: 1rem;
     overflow: hidden;
+}
+
+.post-images img {
+    cursor: pointer;
 }
 
 .post-images-1 > img {
