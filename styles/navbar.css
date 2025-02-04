@@ -12,6 +12,10 @@
 /* Navigation Items */
 .navbar > ul > .navitem {
     flex: none;
+    
+}
+
+.navbar > ul > .navitem > a {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -19,21 +23,23 @@
     gap: 0.75rem;
     border-radius: 1rem;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
-.navbar > ul > .navitem:hover {
+.navbar > ul > .navitem > a:hover {
     background-color: var(--hover-background-color);
 }
-.navbar > ul > .navitem:active {
+.navbar > ul > .navitem > a:active {
     background-color: var(--active-background-color);
 }
 
-.navbar > ul > .navitem > img {
+.navbar > ul > .navitem img {
     width: 1.75rem;
     aspect-ratio: 1;
 }
 
-.navbar > ul > .navitem > span {
+.navbar > ul > .navitem span {
     font-size: 1.5rem;
     user-select: none;
 }
@@ -52,7 +58,7 @@
     background-color: var(--active-background-color);
 }
 
-.navbar > ul > .logo > img {
+.navbar > ul > .logo img {
     width: 2rem;
     aspect-ratio: 1;
 }
