@@ -32,6 +32,9 @@
 .post-profile-pic > img:active {
     opacity: 0.8;
 }
+.post-profile-pic.square > img {
+    border-radius: 0.35rem;
+}
 
 .post-body {
     flex: 1;
@@ -66,6 +69,11 @@
 .post-content > p {
     line-height: 1.35;
     padding-top: 0.75rem;
+}
+
+.post-content > p .highlight {
+    color: var(--primary-blue-color);
+    cursor: pointer;
 }
 
 .post-images {
