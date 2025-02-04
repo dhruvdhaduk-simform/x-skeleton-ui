@@ -18,7 +18,7 @@
 
 body {
     /* Make the page responsive for ultra-wide screen sizes. */
-    max-width: 110rem;
+    max-width: 85rem;
     margin: auto;
     display: flex;
     justify-content: center;
