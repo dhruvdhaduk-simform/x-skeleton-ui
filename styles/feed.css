@@ -166,3 +166,32 @@
     height: 100%;
     object-fit: cover;
 }
+
+.feed .post-buttons {
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feed .post-buttons button {
+    background-color: black;
+    color: #a1a1a1;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.feed .post-buttons .last-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feed .post-buttons img {
+    width: 1rem;
+    height: 1rem;
+}
