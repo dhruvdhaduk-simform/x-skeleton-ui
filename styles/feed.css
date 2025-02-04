@@ -74,6 +74,7 @@
 }
 
 .post-images-2,
+.post-images-3,
 .post-images-4
 {
     display: grid;
@@ -89,7 +90,24 @@
     aspect-ratio: 16 / 9;
 }
 
+.post-images-3 .post-img-container-left {
+    aspect-ratio: 8 / 9;
+}
+.post-images-3 .post-img-container-left .post-img-holder {
+    aspect-ratio: 8 / 9;
+}
+
+.post-images-3 .post-img-container-right {
+    display: grid;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+.post-images-3 .post-img-container-right .post-img-holder {
+    aspect-ratio: 16 / 9;
+}
+
 .post-images-2 img,
+.post-images-3 img,
 .post-images-4 img
 {
     display: block;
