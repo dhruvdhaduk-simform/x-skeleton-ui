@@ -12,7 +12,6 @@
 /* Navigation Items */
 .navbar > ul > .navitem {
     flex: none;
-    
 }
 
 .navbar > ul > .navitem > a {
