@@ -21,7 +21,7 @@
 
 .search-bar:focus {
     outline: none;
-    border: 1px solid #6e6e6e;
+    border: 1px solid var(--primary-blue-color);
 }
 
 /* Subscribe to Premium section */
