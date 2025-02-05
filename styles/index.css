@@ -18,7 +18,7 @@
 
 body {
     /* Make the page responsive for ultra-wide screen sizes. */
-    max-width: 110rem;
+    max-width: 85rem;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -27,6 +27,24 @@ body {
 
 img {
     user-select: none;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;    
+}
+
+.feed::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
 }
 
 .navbar {
