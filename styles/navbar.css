@@ -146,6 +146,27 @@
     opacity: 0.8;
 }
 
+.navbar .notifications-img-holder {
+    position: relative;
+    /* background-color: red; */
+}
+
+.navbar .notifications-img-holder .notifications-count {
+    position: absolute;
+    top: -25%;
+    right: -25%;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--primary-blue-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+
+}
+
 /* 
  * Navbar moves to bottom when screen width is less than 600px.
  * Therefore, some items in navbar will be hidden and only icons will be shown for rest of the items.
