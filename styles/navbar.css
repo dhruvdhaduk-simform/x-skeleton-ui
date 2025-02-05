@@ -164,7 +164,16 @@
     background-color: var(--primary-blue-color);
     font-weight: bold;
     font-size: 0.9rem;
+}
 
+.navbar .navitem span.navitem-extra-label {
+    background-color: var(--primary-blue-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.15rem;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+    border-radius: 0.25rem;
 }
 
 /* 
