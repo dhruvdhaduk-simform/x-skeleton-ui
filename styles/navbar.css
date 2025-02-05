@@ -44,10 +44,16 @@
     width: var(--navbar-icon-size);
     aspect-ratio: 1;
 }
+.navbar > ul > .navitem.active img {
+    scale: 1.2;
+}
 
 .navbar > ul > .navitem span {
     font-size: var(--navbar-label-font-size);
     user-select: none;
+}
+.navbar > ul > .navitem.active span {
+    font-weight: bold;
 }
 
 /* Main X logo */
