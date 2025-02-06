@@ -3,16 +3,21 @@
     align-items: start;
     max-width: 100%;
     border-bottom: 2px solid var(--border-color);
+
+    --profile-pic-size: 3rem;
+    --profile-pic-size-mobile: 2.5rem;
+    --spacing: 1rem;
+    --spacing-mobile: 0.6rem;
 }
 
 /* Profile Picture */
 .newpost > .user-profilepic {
     flex: none;
-    width: 3rem;
+    width: var(--profile-pic-size);
     aspect-ratio: 1;
     border-radius: 100%;
     cursor: pointer;
-    margin: 1rem;
+    margin: var(--spacing);
 }
 .newpost > .user-profilepic:hover {
     opacity: 0.9;
@@ -23,7 +28,7 @@
 
 .newpost > .input-container {
     flex: 1;
-    padding: 1rem;
+    padding: var(--spacing);
     padding-left: 0;
     display: flex;
     flex-direction: column;
@@ -36,13 +41,10 @@
     height: 5rem;
     background-color: black;
     color: white;
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding: 0.5rem;
     border: none;
     border-radius: 0.5rem;
-}
-.newpost > .input-container > textarea::placeholder {
-    font-size: 1.5rem;
 }
 .newpost > .input-container > textarea:focus {
     outline: none;
@@ -84,4 +86,16 @@
 }
 .newpost > .input-container > .buttons > .post-btn:active {
     opacity: 0.8;
+}
+
+/* Adjust the sizes for smaller screens (mobile devices) */
+@media (max-width: 600px) {
+    .newpost > .user-profilepic {
+        width: var(--profile-pic-size-mobile);
+        margin: var(--spacing-mobile);
+    }
+
+    .newpost > .input-container {
+        padding: var(--spacing-mobile);
+    }
 }

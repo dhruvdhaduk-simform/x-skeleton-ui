@@ -1,9 +1,17 @@
+/* Set the variables to control sizes for different screen sizes. */
+.feed {
+    --profile-pic-size: 3rem;
+    --profile-pic-size-mobile: 2.5rem;
+    --post-padding: 1rem;
+    --post-padding-mobile: 0.6rem;
+}
+
 .feed .post {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: var(--post-padding);
+    padding-right: var(--post-padding);
     border-bottom: 1px solid var(--border-color);
     display: flex;
-    gap: 1rem;
+    gap: var(--post-padding);
 }
 
 .feed .post.has-a-reply {
@@ -13,13 +21,13 @@
 /* Profile picture section */
 .feed .post-profile-pic,
 .feed .post-body {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: var(--post-padding);
+    padding-bottom: var(--post-padding);
 }
 
 .feed .post-profile-pic {
     flex: none;
-    width: 3rem;
+    width: var(--profile-pic-size);
     display: flex;
     align-items: start;
     justify-content: center;
@@ -55,7 +63,7 @@
 }
 
 .feed .post-profile-pic > img {
-    width: 3rem;
+    width: 100%;
     aspect-ratio: 1;
     border-radius: 100%;
     cursor: pointer;
@@ -125,6 +133,7 @@
 }
 
 .feed .post-images-1 > img {
+    display: block;
     width: 100%;
 }
 
@@ -202,4 +211,23 @@
 .feed .post-buttons img {
     width: 1rem;
     height: 1rem;
+}
+
+/* Adjust the sizes for smaller screens (mobile devices) */
+@media (max-width: 600px) {
+    .feed .post-profile-pic {
+        width: var(--profile-pic-size-mobile);
+    }
+
+    .feed .post {
+        padding-left: var(--post-padding-mobile);
+        padding-right: var(--post-padding-mobile);
+        gap: var(--post-padding-mobile);
+    }
+
+    .feed .post-profile-pic,
+    .feed .post-body {
+        padding-top: var(--post-padding-mobile);
+        padding-bottom: var(--post-padding-mobile);
+    }
 }

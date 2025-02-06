@@ -49,7 +49,7 @@ img {
 
 .navbar {
     flex: none;
-    width: 16rem;
+    width: 17rem;
     overflow: auto;
 }
 
@@ -76,6 +76,79 @@ img {
     overflow: auto;
 }
 
+.grok-btn {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 1px #ffffff50;
+    cursor: pointer;
+}
+.grok-btn:hover {
+    opacity: 0.9;
+}
+.grok-btn:active {
+    opacity: 0.8;
+}
+
+.grok-btn > img {
+    width: 2rem;
+    aspect-ratio: 1;
+}
+.grok-btn > span {
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.message-box {
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+    width: 25rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1rem;
+    background-color: black;
+    border: 1px solid var(--border-color);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: 0 0 20px 1px #ffffff50;
+}
+
+.message-box > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.message-box > img {
+    width: 1.5rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+.message-box > img:hover {
+    opacity: 0.9;
+}
+.message-box > img:active {
+    opacity: 0.8;
+}
+
+.message-box > img:nth-child(2) {
+    margin-left: auto;
+}
+
 /*
  * Remove the aside section when screen width is less than 1100px.
  * Therefore, there will be enough space for main content (i.e. feed).
@@ -100,5 +173,13 @@ img {
         right: 0;
         width: 100%;
         height: 3.5rem;
+    }
+
+    .grok-btn {
+        display: none;
+    }
+
+    .message-box {
+        display: none;
     }
 }
